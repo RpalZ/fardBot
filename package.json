@@ -18,6 +18,7 @@
   "homepage": "https://github.com/RpalZ/fardBot#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
+    "lodash": "^4.17.21",
     "nodemon": "^2.0.12"
   }
 }
