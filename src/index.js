@@ -16,7 +16,6 @@ client.commands = new Discord.Collection()
 
 fs.readdirSync(`${__dirname}/commands`).forEach((val, i, arr) => {
     fs.readdirSync(`${__dirname}/commands/${val}/`).filter(m => m.endsWith('js')).forEach((v, k) => {
-
         const cmd = require(`${__dirname}/commands/${val}/${v}`)
         client.commands.set(cmd.name, cmd)
     })
