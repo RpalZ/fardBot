@@ -8,6 +8,7 @@ module.exports = {
     name: 'help',
     async execute(client, message, args,) {
 
+        console.log('he')
         const cmdDir = fs.readdirSync('./src/commands/').sort().reduce((acc, cur) => {
             let fileNames = fs.readdirSync(`./src/commands/${cur}`).filter(f => f.endsWith('.js')).map(m => m.slice(0, -3))
             acc[cur] = fileNames
