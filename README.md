@@ -9,7 +9,7 @@ your mom and your dad woh!! SLOW DOWN THERE BUDDY
 
 # how to use this 
 
-```alt+f4```
+```alt+f4 or cmd + q```
 
 # hey duds
 
