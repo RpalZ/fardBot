@@ -7,6 +7,6 @@ hi this is cool bot for cool people wink wink also ur kinda susss :?????????????
 
 your mom and your dad woh!! SLOW DOWN THERE BUDDY
 
-#how to use this 
+# how to use this 
 
 ```alt+f4```
