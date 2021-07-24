@@ -10,3 +10,7 @@ your mom and your dad woh!! SLOW DOWN THERE BUDDY
 # how to use this 
 
 ```alt+f4```
+
+# hey duds
+
+hey duds when change do pull request plz cuz if no that is no control plz 
