@@ -24,4 +24,20 @@ fs.readdirSync(`${__dirname}/commands`).forEach((val, i, arr) => {
 
 console.table(client.commands.map(m => m.name))
 
+client.on('ready', () => {
+
+    const AoS = [
+        `f!help`,
+        `Watching this server!`,
+        `Helping people!`
+    ];
+
+    let index = 0;
+    setInterval(() => {
+        if(index === AoS.length) index = 0;
+        const status = AoS[index];
+        client.user.setActivity(status, { type: 'PLAYING' }).catch(console.error)
+    }, 15000);
+})
+
 client.login(config.botToken)
