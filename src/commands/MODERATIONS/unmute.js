@@ -1,22 +1,22 @@
 module.exports = {
     name: 'unmute',
-    async execute(client, message, args){
+    async execute(client, message, args) {
+
+        const user = message.member
 
         if (!user.hasPermission(['MUTE_MEMBERS'])) return message.channel.send('You do not have permissions to run this command!'); //setting permissions
         if (!user.hasPermission(['ADMINISTRATOR'])) return message.channel.send('You do not have permissions to run this command!'); //setting permissions
-        
-        const target = message.mentions.users.first();
-        
-        if(target){
-            
-            let mainRole = message.guild.roles.cache.find(role => role.name === 'Member'); //defining roles
+
+        const target = message.mentions.members.first();
+
+        if (target) {
+
             let muteRole = message.guild.roles.cache.find(role => role.name === 'Muted'); //defining roles
- 
-            let memberTarget= message.guild.members.cache.get(target.id);
- 
-            memberTarget.roles.remove(muteRole.id); //removing mute
-            memberTarget.roles.add(mainRole.id); //adding main role
-            message.channel.send(`<@${memberTarget.user.id}> has been unmuted`); //sending msg
+
+
+            target.roles.remove(muteRole); //removing mute
+
+            message.channel.send(`${target} has been unmuted`); //sending msg
 
         } else {
 
