@@ -18,7 +18,7 @@ client.commands = new Discord.Collection()
 //distube
 client.distube = new distube(client, { searchSongs: false, emitNewSongOnly: true });
 client.distube.on("playSong", (message, queue, song) => message.channel.send(`Playing \`${song.name}\` - \`${song.formattedDuration}\`\nRequested By: ${song.user}`))
-client.distube.on("addSong", (message, queue, song) => message.channel.send(`Added ${song.name} - \`${song.formattedDuration}\` to the queue by ${song.user}`));
+client.distube.on("addSong", (message, queue, song) => message.channel.send(`Added \`${song.name}\` - \`${song.formattedDuration}\` to the queue by ${song.user}`));
 
 fs.readdirSync(`${__dirname}/commands`).forEach((val, i, arr) => {
     fs.readdirSync(`${__dirname}/commands/${val}/`).filter(m => m.endsWith('js')).forEach((v, k) => {
