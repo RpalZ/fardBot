@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/RpalZ/fardBot#readme",
   "dependencies": {
+    "@discordjs/opus": "^0.5.3",
     "axios": "^0.21.1",
     "discord.js": "^12.5.3",
+    "distube": "^2.8.15",
+    "ffmpeg-static": "^4.4.0",
     "lodash": "^4.17.21",
     "lyrics-finder": "^21.7.0",
     "ms": "^2.1.3",
